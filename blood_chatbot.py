@@ -4,7 +4,7 @@ import time
 # ==========================================
 # 1. ใส่ API Key ของคุณ
 # ==========================================
-API_KEY = "AIzaSyBKhkuuDuAylH4gLHh8LOuWkpyM9KZF8ik"
+API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=API_KEY)
 
 # ==========================================

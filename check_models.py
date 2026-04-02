@@ -1,7 +1,7 @@
 import google.generativeai as genai
 
 # 1. เอา API Key ของคุณมาใส่ตรงนี้เหมือนเดิมครับ
-API_KEY = "AIzaSyBKhkuuDuAylH4gLHh8LOuWkpyM9KZF8ik"
+API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=API_KEY)
 
 print("🔍 กำลังสแกนหาชื่อรุ่น AI ที่คุณใช้งานได้...")

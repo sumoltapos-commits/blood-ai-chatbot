@@ -7,7 +7,7 @@ import time
 # ==========================================
 # 1. ตั้งค่า API Key และ AI Model (แบบ Paid Plan)
 # ==========================================
-API_KEY = "AIzaSyBKhkuuDuAylH4gLHh8LOuWkpyM9KZF8ik"
+API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=API_KEY)
 
 # เมื่อจ่ายเงินแล้ว แนะนำให้ใช้ gemini-1.5-flash เพื่อความเร็วและประหยัด 

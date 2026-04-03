@@ -86,7 +86,7 @@ if "chat_session" not in st.session_state:
 
         time.sleep(5) # รอ Google ประมวลผลไฟล์
 
-        model = genai.GenerativeModel(model_name='gemini-2.0-flash') # อัปเกรดเป็นรุ่น 2.0 ล่าสุด
+        model = genai.GenerativeModel(model_name='gemini-1.5-flash')
         
         instructions = f"""คุณคือผู้เชี่ยวชาญการบริจาคโลหิตของสภากาชาดไทย 
         ใช้ข้อมูลจากไฟล์หลัก {MANUAL_FILE} และคลังความรู้สะสมจากเว็บที่ได้รับเท่านั้น
